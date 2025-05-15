@@ -1,0 +1,53 @@
+<mujoco model="arena">
+  <compiler angle="radian" meshdir="assets/" autolimits="true"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="120" elevation="-20"/>
+  </visual>
+
+  <default>
+    <camera pos="0.72 0.9 0.7" xyaxes="-0.7 0.7 0.0 -0.25 -0.25 0.90"/>
+  </default>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+      markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+
+    <material name="table_mat" specular="0" shininess="0.5" reflectance="0" rgba="0.93 0.93 0.93 1"/>
+    <material name="block_mat" specular="0" shininess="0.5" reflectance="0" rgba="0.2 0.2 0.2 1"/>
+
+    <material name="white" rgba="1 1 1 1"/>
+
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+
+    <camera name="diagonal_front" pos="0.72 0.9 0.7" xyaxes="-0.7 0.7 0.0 -0.25 -0.25 0.90"/>
+    <camera name="fixednear" pos="0 1 1" zaxis="0 1 -1"></camera>
+    <camera name="fixedfar" pos="0 -2 2" zaxis="0 -1 1"></camera>
+    <camera name="top" pos="0 0 2" zaxis="0 0 1"/>
+    <camera name="topnear" pos="0.2 -0.14 1.65" zaxis="0 0 1"/>
+    <camera name="sidefront" pos="0 -1.8 0.35" xyaxes="1 0 0 0 0 1"/>
+    <camera name="sideright" pos="1.17 0 0.3" xyaxes="0 1 0 0 0 1"/>
+    <camera name="tableclose" pos="0.72 0.41 0.36" xyaxes="-0.7 0.7 0.0 -0.25 -0.25 0.90"/>
+    
+    <body name="table_stand" pos="0 0 0.025">
+      <geom name="table_stand" pos="0 0 -0.0125" material="table_mat" size="0.1 0.1 0.0125" type="box"/>
+      <frame name="robot_base"/>
+    </body>
+
+    <body name="table_desk" pos="0 0.35 0.025">
+      <geom name="table_desk" size="0.2 0.2 0.0125" pos="0 0 -0.0125" type="box" material="table_mat" contype="1" conaffinity="1" solref="0.0001 1" solimp="1 1 0.001" margin="0.0005" />
+    </body>
+
+
+  </worldbody>
+
+</mujoco>
+

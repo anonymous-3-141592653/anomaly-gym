@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
+
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <!-- robot name parameter -->
+  <xacro:arg name="name" default="ur"/>
+  <!-- import main macro -->
+  <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
+  <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro"/>
+
+  <xacro:arg name="ur_type" default="ur3"/>
+  <xacro:arg name="use_fake_hardware" default="true" />
+  <xacro:arg name="use_gripper" default="true"/>
+
+  <!-- parameters -->
+  <xacro:arg name="tf_prefix" default=""/>
+  <xacro:arg name="robot_ip" default="192.168.178.221"/>
+  <xacro:arg name="joint_limit_params" default="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
+  <xacro:arg name="kinematics_params" default="$(find ur2l_description)/config/robot_calibration.yaml"/>
+  <xacro:arg name="physical_params" default="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>
+  <xacro:arg name="visual_params" default="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml"/>
+  <xacro:arg name="transmission_hw_interface" default=""/>
+  <xacro:arg name="safety_limits" default="false"/>
+  <xacro:arg name="safety_pos_margin" default="0.15"/>
+  <xacro:arg name="safety_k_position" default="20"/>
+  <!-- create link fixed to the "world" -->
+  <link name="world"/>
+
+  <!-- arm -->
+  <xacro:ur_robot 
+    name="$(arg name)" 
+    tf_prefix="$(arg tf_prefix)" 
+    parent="world" 
+    robot_ip="$(arg robot_ip)"
+    joint_limits_parameters_file="$(arg joint_limit_params)" 
+    kinematics_parameters_file="$(arg kinematics_params)" 
+    physical_parameters_file="$(arg physical_params)" 
+    visual_parameters_file="$(arg visual_params)" 
+    safety_limits="$(arg safety_limits)" 
+    safety_pos_margin="$(arg safety_pos_margin)" 
+    safety_k_position="$(arg safety_k_position)" 
+    script_filename="$(find ur_client_library)/resources/external_control.urscript"
+    input_recipe_filename="$(find ur_robot_driver)/resources/rtde_input_recipe.txt"
+    output_recipe_filename="$(find ur_robot_driver)/resources/rtde_output_recipe.txt"
+    use_fake_hardware="$(arg use_fake_hardware)"
+  >
+    <origin xyz="0 0 0.025" rpy="0 0 ${pi}"/>
+  </xacro:ur_robot>
+
+  <!-- gripper -->
+  <xacro:if value="$(arg use_gripper)">
+    <xacro:robotiq_gripper name="RobotiqGripperHardwareInterface" prefix="" parent="tool0" use_fake_hardware="true">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:robotiq_gripper>
+  </xacro:if>
+
+  <link name="end_effector">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="end_effector_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0.15" />
+    <parent link="wrist_3_link" />
+    <child link="end_effector" />
+  </joint>
+
+
+</robot>

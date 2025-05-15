@@ -1,0 +1,443 @@
+Goal0:
+  action_factor:
+    light:
+      normalized_score: 0.9498946734878122
+      param: 0.34669338677354705
+    medium:
+      normalized_score: 0.8997057545056341
+      param: 0.2224448897795591
+    strong:
+      normalized_score: 0.7510532651218779
+      param: 0.11222444889779558
+    tiny:
+      normalized_score: 0.9899772628481627
+      param: 0.6172344689378757
+    extreme:
+      normalized_score: 0.4995987561440466
+      param: 0.03406813627254509
+  action_noise:
+    light:
+      normalized_score: 0.9500367806867958
+      param: 0.6312625250501002
+    medium:
+      normalized_score: 0.8992125589326914
+      param: 1.0220440881763526
+    strong:
+      normalized_score: 0.7490804828301068
+      param: 2.004008016032064
+    tiny:
+      normalized_score: 0.9897515631791888
+      param: 0.2905811623246493
+    extreme:
+      normalized_score: 0.4999749222590029
+      param: 4.498997995991984
+  action_offset:
+    light:
+      normalized_score: 0.9498194402648209
+      param: 0.21382765531062128
+    medium:
+      normalized_score: 0.9006754271575217
+      param: 0.6899799599198397
+    strong:
+      normalized_score: 0.7493981342160698
+      param: 0.8927855711422847
+    tiny:
+      normalized_score: 0.9902698364931287
+      param: 0.12124248496993989
+    extreme:
+      normalized_score: 0.49758417761728024
+      param: 1.0030060120240483
+  force_agent:
+    light:
+      normalized_score: 0.9498194402648209
+      param: 1.0701402805611222
+    medium:
+      normalized_score: 0.8997977062226236
+      param: 3.4509018036072145
+    strong:
+      normalized_score: 0.7497743003310262
+      param: 4.460921843687375
+    tiny:
+      normalized_score: 0.9902781957401278
+      param: 0.6012024048096193
+    extreme:
+      normalized_score: 0.4983699468351891
+      param: 5.014028056112225
+  moving_objects:
+    light:
+      normalized_score: 0.9500033436987997
+      param: 2.565130260521042
+    medium:
+      normalized_score: 0.9240395225198114
+      param: 4.869739478957916
+    strong:
+      normalized_score: 0.9240395225198114
+      param: 4.869739478957916
+    tiny:
+      normalized_score: 0.9897432039321897
+      param: 0.9118236472945891
+    extreme:
+      normalized_score: 0.9240395225198114
+      param: 4.869739478957916
+  obs_factor:
+    extreme:
+      normalized_score: 0.4848864814257532
+      param: 0.04609218436873747
+    light:
+      normalized_score: 0.9430150132076103
+      param: 0.9478957915831663
+    medium:
+      normalized_score: 0.9000066873975991
+      param: 0.9318637274549098
+    strong:
+      normalized_score: 0.7521316079847528
+      param: 0.09619238476953906
+    tiny:
+      normalized_score: 0.9912478683920153
+      param: 0.9839679358717434
+  obs_noise:
+    light:
+      normalized_score: 0.9489166415889256
+      param: 0.250501002004008
+    medium:
+      normalized_score: 0.9014026816464372
+      param: 0.47094188376753504
+    strong:
+      normalized_score: 0.7487628314441436
+      param: 0.8416833667334669
+    tiny:
+      normalized_score: 0.9906877988430802
+      param: 0.04008016032064128
+    extreme:
+      normalized_score: 0.498904938643127
+      param: 1.533066132264529
+  obs_offset:
+    light:
+      normalized_score: 0.9495101481258569
+      param: 0.18837675350701402
+    medium:
+      normalized_score: 0.8995302103186545
+      param: 0.29659318637274545
+    strong:
+      normalized_score: 0.749991640753001
+      param: 0.3987975951903807
+    tiny:
+      normalized_score: 0.9900441368241548
+      param: 0.09819639278557113
+    extreme:
+      normalized_score: 0.49998328150600196
+      param: 0.4749498997995992
+  mass_agent:
+    light:
+      normalized_score: 0.9509061423746948
+      param: 2.8657314629258517
+    medium:
+      normalized_score: 0.8997224729996323
+      param: 4.464929859719439
+    strong:
+      normalized_score: 0.7504346808439496
+      param: 8.919839679358718
+    tiny:
+      normalized_score: 0.9902698364931287
+      param: 1.6092184368737477
+    extreme:
+      normalized_score: 0.5000919517169894
+      param: 25.98997995991984
+
+
+
+Goal1:
+  action_factor:
+    light:
+      normalized_score: 0.9502753281165901
+      param: 0.3306613226452906
+    medium:
+      normalized_score: 0.9005368553250804
+      param: 0.22044088176352702
+    strong:
+      normalized_score: 0.7522046950689356
+      param: 0.11222444889779558
+    tiny:
+      normalized_score: 0.989835631184532
+      param: 0.5490981963927856
+    extreme:
+      normalized_score: 0.4978194565202391
+      param: 0.03006012024048096
+  action_noise:
+    light:
+      normalized_score: 0.9508342648946301
+      param: 1.1523046092184368
+    medium:
+      normalized_score: 0.8983563118453195
+      param: 1.5531062124248496
+    strong:
+      normalized_score: 0.7506658938158132
+      param: 2.4048096192384767
+    tiny:
+      normalized_score: 0.9895872148387365
+      param: 0.6713426853707415
+    extreme:
+      normalized_score: 0.5094743234104805
+      param: 5.0
+  action_offset:
+    light:
+      normalized_score: 0.9499786085924454
+      param: 0.6943887775551103
+    medium:
+      normalized_score: 0.8995983935742972
+      param: 0.7759519038076154
+    strong:
+      normalized_score: 0.7506037897293643
+      param: 0.8839679358717436
+    tiny:
+      normalized_score: 0.9901116493465271
+      param: 0.4981963927855712
+    extreme:
+      normalized_score: 0.5028015843442499
+      param: 0.9919839679358718
+  force_agent:
+    light:
+      normalized_score: 0.9498405995114478
+      param: 3.4749498997995993
+    medium:
+      normalized_score: 0.8992395699637036
+      param: 3.8837675350701404
+    strong:
+      normalized_score: 0.7497481334271796
+      param: 4.424849699398798
+    tiny:
+      normalized_score: 0.9904842738652204
+      param: 2.4889779559118237
+    extreme:
+      normalized_score: 0.4936515822741137
+      param: 4.965931863727455
+  moving_objects:
+    light:
+      normalized_score: 0.9737644737023696
+      param: 13.436873747494989
+    medium:
+      normalized_score: 0.9737644737023696
+      param: 13.436873747494989
+    strong:
+      normalized_score: 0.9737644737023696
+      param: 13.436873747494989
+    tiny:
+      normalized_score: 0.9900357443519784
+      param: 14.338677354709418
+    extreme:
+      normalized_score: 0.9737644737023696
+      param: 13.436873747494989
+  obs_factor:
+    extreme:
+      normalized_score: 0.506928055866076
+      param: 0.03006012024048096
+    light:
+      normalized_score: 0.9499993099545949
+      param: 0.4989979959919839
+    medium:
+      normalized_score: 0.9006265612277287
+      param: 0.1623246492985972
+    strong:
+      normalized_score: 0.7499689479567756
+      param: 0.07414829659318636
+    tiny:
+      normalized_score: 0.9900150429898287
+      param: 0.749498997995992
+
+
+  obs_noise:
+    light:
+      normalized_score: 0.949447273630605
+      param: 0.3907815631262525
+    medium:
+      normalized_score: 0.9030348196911357
+      param: 0.5110220440881763
+    strong:
+      normalized_score: 0.7518872741826413
+      param: 0.7915831663326653
+    tiny:
+      normalized_score: 0.9906567852164674
+      param: 0.22044088176352705
+    extreme:
+      normalized_score: 0.5002760181619951
+      param: 1.533066132264529
+  obs_offset:
+    light:
+      normalized_score: 0.9519107357264108
+      param: 0.1903807615230461
+    medium:
+      normalized_score: 0.8994051808609006
+      param: 0.2625250501002004
+    strong:
+      normalized_score: 0.7518113691880925
+      param: 0.36472945891783565
+    tiny:
+      normalized_score: 0.9907050883948163
+      param: 0.1282565130260521
+    extreme:
+      normalized_score: 0.4977435515256904
+      param: 0.4348697394789579
+  mass_agent:
+    light:
+      normalized_score: 0.9505099435542859
+      param: 3.0180360721442887
+    medium:
+      normalized_score: 0.9002539367090355
+      param: 4.5030060120240485
+    strong:
+      normalized_score: 0.7510454187885562
+      param: 8.919839679358718
+    tiny:
+      normalized_score: 0.9904014684166219
+      param: 1.7995991983967936
+    extreme:
+      normalized_score: 0.5000207013621496
+      param: 24.769539078156313
+
+
+Goal2:
+  action_factor:
+    light:
+      normalized_score: 0.9502978794317377
+      param: 0.32665330661322645
+    medium:
+      normalized_score: 0.9002148540956189
+      param: 0.2124248496993988
+    strong:
+      normalized_score: 0.747936269871028
+      param: 0.10220440881763526
+    tiny:
+      normalized_score: 0.9901559924057112
+      param: 0.5490981963927856
+    extreme:
+      normalized_score: 0.501734902184846
+      param: 0.01002004008016032
+  action_noise:
+    light:
+      normalized_score: 0.9516727075782193
+      param: 0.9318637274549098
+    medium:
+      normalized_score: 0.9005898072264776
+      param: 1.222444889779559
+    strong:
+      normalized_score: 0.7510906374798388
+      param: 1.8937875751503006
+    tiny:
+      normalized_score: 0.9899238785627986
+      param: 0.5410821643286573
+    extreme:
+      normalized_score: 0.5011575933960636
+      param: 3.5871743486973946
+  action_offset:
+    light:
+      normalized_score: 0.9486492759833591
+      param: 0.5290581162324649
+    medium:
+      normalized_score: 0.9002803221025943
+      param: 0.6693386773547093
+    strong:
+      normalized_score: 0.7489004350646645
+      param: 0.8376753507014028
+    tiny:
+      normalized_score: 0.9900072014807673
+      param: 0.37074148296593185
+    extreme:
+      normalized_score: 0.4971997547925557
+      param: 0.9478957915831663
+  force_agent:
+    light:
+      normalized_score: 0.9486492759833591
+      param: 2.6452905811623246
+    medium:
+      normalized_score: 0.9002803221025943
+      param: 3.346693386773547
+    strong:
+      normalized_score: 0.7489004350646645
+      param: 4.188376753507014
+    tiny:
+      normalized_score: 0.9900072014807673
+      param: 1.8537074148296593
+    extreme:
+      normalized_score: 0.4971997547925557
+      param: 4.739478957915831
+  moving_objects:
+    light:
+      normalized_score: 0.9499526844858679
+      param: 19.338677354709418
+    medium:
+      normalized_score: 0.9184923313157285
+      param: 34.06813627254509
+    strong:
+      normalized_score: 0.9184923313157285
+      param: 34.06813627254509
+    tiny:
+      normalized_score: 0.9906142684545385
+      param: 3.006012024048096
+    extreme:
+      normalized_score: 0.9184923313157285
+      param: 34.06813627254509
+  obs_factor:
+    extreme:
+      normalized_score: 0.4965986394557823
+      param: 0.024048096192384766
+    light:
+      normalized_score: 0.9499824426708566
+      param: 0.6593186372745491
+    medium:
+      normalized_score: 0.899994643526702
+      param: 0.156312625250501
+    strong:
+      normalized_score: 0.7553758161182234
+      param: 0.06412825651302605
+    tiny:
+      normalized_score: 0.9901024276727313
+      param: 0.81563126252505
+  obs_noise:
+    light:
+      normalized_score: 0.9499883943078543
+      param: 0.21042084168336672
+    medium:
+      normalized_score: 0.895257140476488
+      param: 0.2905811623246493
+    strong:
+      normalized_score: 0.7545961516715173
+      param: 0.45090180360721444
+    tiny:
+      normalized_score: 0.9911618190583319
+      param: 0.1002004008016032
+    extreme:
+      normalized_score: 0.49939590884472773
+      param: 0.7414829659318637
+  obs_offset:
+    light:
+      normalized_score: 0.9503454925277196
+      param: 0.10821643286573146
+    medium:
+      normalized_score: 0.8998339493277625
+      param: 0.1442885771543086
+    strong:
+      normalized_score: 0.7504300057730878
+      param: 0.24048096192384769
+    tiny:
+      normalized_score: 0.9902214604126865
+      param: 0.06412825651302605
+    extreme:
+      normalized_score: 0.49934234411174794
+      param: 0.6032064128256512
+  mass_agent:
+    light:
+      normalized_score: 0.949339665875099
+      param: 3.1322645290581166
+    medium:
+      normalized_score: 0.9001493860886436
+      param: 4.693386773547095
+    strong:
+      normalized_score: 0.7502990697591372
+      param: 9.605210420841685
+    tiny:
+      normalized_score: 0.9904595258925967
+      param: 1.9138276553106213
+    extreme:
+      normalized_score: 0.5311181340427684
+      param: 29.767535070140283
+

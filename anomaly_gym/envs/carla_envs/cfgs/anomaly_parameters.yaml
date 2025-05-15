@@ -1,0 +1,151 @@
+Carla-LaneKeep:
+  slippery_road:
+    light:
+      normalized_score: 0.9493017975183988
+      param: 0.18181818181818182
+    medium:
+      normalized_score: 0.9051101621166802
+      param: 0.11111111111111112
+    strong:
+      normalized_score: 0.7133364454203335
+      param: 0.08585858585858587
+    tiny:
+      normalized_score: 0.9923984393460007
+      param: 0.21969696969696972
+    extreme:
+      normalized_score: 0.5016511350472864
+      param: 0.05808080808080809
+  brake_fail:
+    light:
+      normalized_score: 0.9509385247554994
+      param: 0.14393939393939395
+    medium:
+      normalized_score: 0.894667381294052
+      param: 0.11363636363636365
+    strong:
+      normalized_score: 0.7570958465164797
+      param: 0.07828282828282829
+    tiny:
+      normalized_score: 0.9892056686088395
+      param: 0.398989898989899
+    extreme:
+      normalized_score: 0.5111775791421014
+      param: 0.03787878787878788
+  steer_fail:
+    light:
+      normalized_score: 0.9491980612850615
+      param: 0.297979797979798
+    medium:
+      normalized_score: 0.9013814208406093
+      param: 0.24494949494949497
+    strong:
+      normalized_score: 0.7483935291642893
+      param: 0.09595959595959597
+    tiny:
+      normalized_score: 0.9900182691033155
+      param: 0.31565656565656564
+    extreme:
+      normalized_score: 0.4984929430545711
+      param: 0.04797979797979798
+
+
+  action_factor:
+    light:
+      normalized_score: 0.948454618279477
+      param: 2.1818181818181817
+    medium:
+      normalized_score: 0.9006264515868763
+      param: 2.909090909090909
+    strong:
+      normalized_score: 0.7507448837866031
+      param: 4.181818181818182
+    tiny:
+      normalized_score: 0.9910095264440948
+      param: 1.7272727272727273
+    extreme:
+      normalized_score: 0.5086475676734845
+      param: 5.909090909090909
+
+  action_noise:
+    light:
+      normalized_score: 0.9481145939590935
+      param: 0.6122448979591837
+    medium:
+      normalized_score: 0.9071042030463874
+      param: 0.8571428571428571
+    strong:
+      normalized_score: 0.7412587815603081
+      param: 1.0408163265306123
+    tiny:
+      normalized_score: 0.9923580974774806
+      param: 0.30612244897959184
+    extreme:
+      normalized_score: 0.49555951290075323
+      param: 1.4081632653061225
+
+  action_offset:
+    light:
+      normalized_score: 0.951122944725877
+      param: 0.5102040816326531
+    medium:
+      normalized_score: 0.9102220531705827
+      param: 0.5510204081632653
+    strong:
+      normalized_score: 0.7685875159206302
+      param: 0.6530612244897959
+    tiny:
+      normalized_score: 0.9939141409775412
+      param: 0.3469387755102041
+    extreme:
+      normalized_score: 0.5609709711440378
+      param: 0.8571428571428571
+  obs_noise:
+    light:
+      normalized_score: 0.9508174991499393
+      param: 0.020202020202020204
+    medium:
+      normalized_score: 0.9014851570739467
+      param: 0.08585858585858587
+    strong:
+      normalized_score: 0.759245491796193
+      param: 0.16666666666666669
+    tiny:
+      normalized_score: 0.9891480373680966
+      param: 0.005050505050505051
+    extreme:
+      normalized_score: 0.49611277281188587
+      param: 0.31818181818181823
+  obs_factor:
+    light:
+      normalized_score: 0.9395678809569091
+      param: 1.3265306122448979
+    medium:
+      normalized_score: 0.9038999060610775
+      param: 1.4081632653061225
+    strong:
+      normalized_score: 0.7485837122587412
+      param: 2.061224489795918
+    tiny:
+      normalized_score: 0.9832235458197179
+      param: 1.0
+    extreme:
+      normalized_score: 0.4987753361342116
+      param: 3.6122448979591835
+  obs_offset:
+    light:
+      normalized_score: 0.9457171343441854
+      param: 0.03535353535353536
+    medium:
+      normalized_score: 0.8866047707141088
+      param: 0.04040404040404041
+    strong:
+      normalized_score: 0.7316977587210476
+      param: 0.05050505050505051
+    tiny:
+      normalized_score: 0.9925079387034123
+      param: 0.010101010101010102
+    extreme:
+      normalized_score: 0.5016223194269149
+      param: 0.3080808080808081
+
+
