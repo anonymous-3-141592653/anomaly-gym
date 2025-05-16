@@ -38,6 +38,10 @@ then run :
 
     uv sync --all-extras
 
+activate venv with 
+
+    source .venv/bin/activate
+
 
 ### Using Environments
 
